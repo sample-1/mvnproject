@@ -20,4 +20,10 @@
     <module>webapp1</module>
     <module>webapp2</module>
   </modules>
+<distributionManagement>
+  <repository>
+    <id>myreleases</id>
+    <url>http://ec2-52-15-39-31.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/myreleases</url>
+  </repository>
+</distributionManagement>
 </project>

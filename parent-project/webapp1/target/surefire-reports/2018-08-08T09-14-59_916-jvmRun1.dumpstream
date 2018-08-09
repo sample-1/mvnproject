@@ -1,0 +1,10 @@
+# Created on 2018-08-08T09:15:08.803
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '#'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '#'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:506)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:212)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:179)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
